@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            position: relative;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            position: absolute;
+            /* 
+                水平布局
+                left + margin-left/right + border-left/right + padding-left/riht + width = 父元素的宽度
+                如过width 、 margin-left/right 、left/right 三个都设置为auto 
+                浏览器会对他们自动设置  width > margin-left/right > left/right
+                width优先级最高，其次margin-left/right，最后left/right
+                
+                垂直布局类似
+            */
+
+            /* 垂直居中 */
+            margin-top: auto;
+            margin-bottom: auto;
+            top: 0;
+            bottom: 0;
+            /* 水平居中 */
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

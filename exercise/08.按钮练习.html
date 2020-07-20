@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            display: block;/* 设置为块元素 */
+            width: 200px;
+            height: 200px;
+            background-image: url(../Source/img/1.jpg);
+            background-size: 200px ;
+        }
+        a:hover{
+            display: block;/* 设置为块元素 */
+            width: 200px;
+            height: 200px;
+            background-image: url(../Source/img/2.jpg);
+            background-size: 200px ;
+        }
+        a:active{
+            display: block;/* 设置为块元素 */
+            width: 200px;
+            height: 200px;
+            background-image: url(../Source/img/3.jpg);
+            background-size: 200px ;
+        }
+
+        /* 
+            图片属于网页中的外部资源，外部资源都需要浏览器单独发送请求加载
+                浏览器加载外部资源时是按需加载的，用则加载，不用则不加载
+
+
+        */
+
+        /* 通过用雪碧图来将所有图片放在一张图里
+            通过设置图片定位来实现具体图片的显示
+
+            雪碧图使用步骤：
+                1.先确定要使用的图标
+                2.测量图标的大小
+                3.根据测量结果创建一个元素
+                4.将雪碧图设置为元素的背景图片
+                5.设置一个偏移量以显示正确的图片
+        */
+        .box1{
+            
+            width: 70px;
+            height: 75px;
+            background-image: url(../Source/spring.jpg);
+            background-position: -17px -16px ;
+        }
+        .box2{
+            
+            width: 55px;
+            height: 78px;
+            background-image: url(../Source/spring.jpg);
+            background-position: -161px -17px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"> </div>
+    <div class="box2"> </div>
+    <a href="javascript:;"></a>
+    
+</body>
+</html>

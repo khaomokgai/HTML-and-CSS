@@ -1,0 +1,63 @@
+/* 
+    css中的注释，内容会解析到css文件中
+*/
+.box1 {
+  background-color: burlywood;
+}
+.box1 .box2 {
+  background-color: chartreuse;
+}
+.box1 .box2 .box3 {
+  background-color: crimson;
+}
+.box1 .box4 {
+  color: darkmagenta;
+}
+.box5 {
+  width: 200px;
+  color: red;
+}
+.box6 {
+  width: 200px;
+}
+div {
+  width: 300px;
+}
+div {
+  width: 300px;
+  height: 300px;
+}
+/* &符号使用 */
+.button-one {
+  background-color: red;
+}
+.button-two {
+  background-color: #976d6d;
+}
+.button-three {
+  background-color: #1f1111;
+}
+/* :extend() 对当前选择器扩展指定选择器的样式（选择器分组） */
+.p1,
+.p2 {
+  width: 200px;
+  height: 200px;
+}
+.p2 {
+  color: red;
+}
+/* 直接对指定的样式进行引用 */
+.p3 {
+  width: 200px;
+  height: 200px;
+  color: blue;
+}
+.p5 {
+  width: 200px;
+  height: 200px;
+}
+.test2 {
+  width: 100px;
+  height: 200px;
+  background-color: red;
+}

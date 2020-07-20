@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            background-image: url("../Source/zuomian.jpg");
+            background-repeat:no-repeat ;
+            background-position: 0 0 ;
+            padding: 10px;
+            overflow: scroll;/* 超出部分滚动条显示 */
+            /* 
+                设置背景的范围
+                    background-clip
+                        可选值：
+                            border-box 默认值，背景会出现在边框的下边
+                            padding-box 背景不会出现在边框，只出现在内容区和内边距
+                            content-box 背景只会出现在内容区
+
+                    background-orgin 背景图片的偏移量计算的原点
+                        padding-box 默认值，background-position从内边距处开始计算
+                        content-box 背景图片的偏移量从内容区处计算
+                        border-box 背景图片的变量从边框处开始计算
+            */
+
+            /* 
+                background-size 设置背景图片大小
+                    第一个值表示宽度
+                    第二个值表示高度
+                        如果只写一个，则第二个值默认是auto
+                    
+                    cover 图片的比例不变，将元素铺满
+                    contain 图片比例不变，将图片在元素中完整显示
+            */
+            background-size: 500px;
+
+            /* 
+                background-attachment 
+                    - 背景图片是否跟随元素移动
+                    - 可选值:
+                        scroll 默认值 背景图片会跟随元素移动
+                        fixed 背景会固定在页面中，不会随元素移动
+            */
+            background-attachment: fixed;
+        }
+        .box3{
+            width: 100px;
+            height: 1000px;
+            background-color: rgb(31, 197, 131);
+            background-image: url(../Source/touxiang.jpg);
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;/* 背景不会随着元素一起移动 */
+            
+        }
+
+        /* 
+            background-color
+            background-image
+            background-repeat
+            background-position
+            background-size
+            background-origin
+            background-clip
+            background-attachment
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni voluptate, sequi doloribus id pariatur labore, non delectus optio ullam veritatis quibusdam ducimus et accusamus provident! Consectetur quidem rerum at fugiat!
+        </div>
+    </div>
+</body>
+</html>

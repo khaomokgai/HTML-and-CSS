@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            单位：
+            px       
+                - 像素，不同的屏幕像素大小不同
+            百分比
+                - 可以是元素跟随父元素改变而改变
+            em
+                - em是相对于元素的字体大小来计算的
+                - 1em = 1font-size
+                - em会根据字体大小的改变而改变
+            rem
+                - rem是相对于根元素的字体大小来计算
+                - html的font-size
+
+            颜色：
+                name   
+                    - 颜色的英文表示 red
+                RGB   
+                    - rgb(255,255,255)
+                RGBA  
+                    - rgba(255,255,255,1)
+                    a的值为1，完全不透明；a的值为0，完全透明。
+                十六进制表示 
+                    - #ffffff    
+                HSL值 HSLA值
+                    H 色相(0 - 360)
+                    S 饱和度，颜色的浓度(0% - 100%)
+                    L 亮度，颜色的亮度(0% - 100%)
+                    A 透明度(1 - 0)
+                
+                    FastStone Capture   吸取颜色的工具
+        */
+        .one{
+            width: 200px;
+            height: 200px;
+            background-color:green;
+            text-align: center;
+        }
+        .two{
+            width: 50%;
+            height: 50%;
+            background-color:rgb(100, 100, 120);
+        }
+        .three{
+            font-size: 16px;
+            width: 10em;
+            height: 10em;
+            background-color: rgba(85, 83, 84, 0.3);
+        }
+        .four{
+            width: 20rem;
+            height: 20rem;
+            background-color: hsl(30, 50%, 50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">two</div>
+        one
+    </div>
+    <div class="three">three</div>
+    <div class="four">four</div>
+ 
+</body>
+</html>

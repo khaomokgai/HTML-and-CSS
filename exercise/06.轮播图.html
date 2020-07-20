@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Source/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+
+    <style>
+        
+        .img_list{
+            width: 590px;
+            height: 470px;
+            margin: 50px auto;
+            position: relative;
+        }
+        ul{
+            list-style: none;
+        }
+        .img_list li{
+            position: absolute;
+            
+        }
+        .img_list li:nth-child(1){
+            z-index: 1;
+        }
+        .pointer{
+            position: absolute;
+            z-index: 9000;
+            bottom: 20px;
+            left: 80px;
+        }
+        .pointer a{
+            float: left;
+            width: 10px;
+            height: 10px;
+            background-color:rgba(255, 255, 255, .6);
+            border-radius: 50%;
+            margin:0px 2px;
+            background-clip: content-box;/* 将背景颜色设置到内容区，边框和内边距不在有背景颜色 */
+            border: 2px solid transparent;/*边框设置为透明 */
+        }
+        .pointer a:hover{
+            background-color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <ul class="img_list">
+        <li><a href="javascript:;"><img src="../Source/img/1.jpg"></a></li>
+        <li><a href="javascript:;"><img src="../Source/img/2.jpg"></a></li>
+        <li><a href="javascript:;"><img src="../Source/img/3.jpg"></a></li>
+        <li><a href="javascript:;"><img src="../Source/img/4.jpg"></a></li>
+        <li><a href="javascript:;"><img src="../Source/img/5.jpg"></a></li>
+        <li><a href="javascript:;"><img src="../Source/img/6.jpg"></a></li>
+        <div class="pointer">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+</body>
+</html>

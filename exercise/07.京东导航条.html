@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Source/font-awesome/css/font-awesome.min.css">
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        body{
+            font-size: 12px;
+            
+        }
+        .clearfix::after,
+        .clearfix::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .top{
+            width: 100%;
+            /* height: 30px; */
+            line-height: 30px;
+            background-color: rgb(196, 199, 199);
+            margin: 100px 0;
+            border-bottom: 1px rgb(97, 96, 96) solid ;
+        }
+        .inner{
+            width: 1190px;
+            margin: 0 auto;
+        }
+        
+        .tar{
+            float: left;
+            border: 1px white transparent;
+        }
+
+        .tar:hover{
+            background-color: rgb(255, 255, 255);
+            
+        }
+        /* 当鼠标移入到tar时，让city_list显示 */
+        .tar:hover .city_list{
+            display: block;/* 显示 */
+
+        }
+        .tar .city_list{
+            display: none;/* 隐藏  */
+            width: 320px;
+            height: 436px;
+            
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            /* 设置绝对定位，使其不占据也面内容 */
+            position: absolute;
+            border-top: none;
+            /* 设置阴影 */
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+        }
+        .one{
+            color: rgb(255, 0, 0);
+            margin-left: 10px;
+            
+        }
+        .tar a{
+            padding-right: 8px;
+        
+        }
+        ul{
+            float: right;
+        }
+        li{
+            float: left;
+            margin: 0 5px;
+        }
+        a{
+            color:#999;
+        }
+        a:hover,
+        .reda{
+            color: red;
+        }
+        .top .right .line{
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 10px 12px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="inner clearfix">
+            <div class="tar">
+                <i class="fa fa-map-marker  one"  aria-hidden="true"></i>
+                <a href="javascript:;">北京</a> 
+
+                <!-- 设置城市列表的效果 -->
+                <div class="city_list">
+                    啊大师大事
+                </div>
+            </div>
+    
+            <ul class="right">
+                <li>
+                    <a href="javascript:;">你好，请登录</a>
+                    <a class="reda" href="javascript:;">免费注册</a>
+                </li>   
+                <!-- 分割线 -->
+                <li class="line"></li>
+                <li><a href="javascript:;">我的订单</a></li>
+    
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">我的京东</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i> 
+                </li>
+    
+                <li class="line"></li>
+                <li><a href="javascript:;">京东会员</a></li>
+    
+                <li class="line"></li>
+                <li>
+                    <a class="reda" href="javascript:;">企业采购</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i> 
+                </li>
+    
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">客户服务</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i> 
+                </li>
+    
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">网站导航</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i> 
+                </li>
+    
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">手机京东</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

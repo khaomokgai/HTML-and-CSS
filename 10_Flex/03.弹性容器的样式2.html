@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 600px;
+            height: 600px;
+            border: 10px red solid;
+            font-size: 60px;
+            line-height: 100px;
+            text-align: center;
+            display: flex;/* 设置为弹性容器 */
+            flex-wrap:wrap;
+            /* 
+                align-items:
+                    - 元素在辅轴上如何对齐
+                    - 元素间的关系
+                        - 可选值：
+                            stretch 默认值，将元素的长度设置为相同的值
+                            flex-start 元素不会拉伸，沿着辅轴的起边对齐
+                            flex-end 沿着辅轴的终边对齐
+                            center 居中对齐
+                            baseline 基线对齐
+            */
+            align-items: flex-start;
+           /*  justify-content: center; */
+
+           /* align-content:  辅轴空白空间的分布*/
+           /* align-content:center; */
+
+           /* align-self: 用来覆盖当前弹性元素上的 align-items */
+           /* align-self:stretch; */
+        }
+
+        li{
+            width: 200px;
+            background-color: blueviolet;
+
+        } 
+
+        li:nth-child(2){
+            background-color: rgb(41, 194, 100);
+        }
+
+        li:nth-child(3){
+            background-color: rgb(225, 255, 52);
+        }
+        li:nth-child(4){
+            background-color: rgb(74, 82, 31);
+        }
+        li:nth-child(5){
+            background-color: rgb(31, 14, 104);
+        }
+    </style>
+</head>
+<body>
+    
+     <ul>
+         <li>1 </li>
+         <li>2
+             <div>2</div>
+             <div></div>
+         </li>
+         <li>3
+            <div>3</div>
+            <div>3</div>
+         </li>
+         <li>1 </li>
+         <li>2
+           
+         </li>
+     </ul>
+</body>
+</html>

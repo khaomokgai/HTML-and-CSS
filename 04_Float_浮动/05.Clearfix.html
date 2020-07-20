@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .box{
+            border: 10px red solid;
+        } 
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(226, 142, 24);
+            float: left;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(95, 76, 49);
+            
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(28, 124, 60);
+            margin-top: 100px;
+            
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;         /* 去除外边框重叠问题 */
+            clear: both;            /* 去除高度塌陷问题  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">      <!-- 去除高度塌陷问题  -->
+        <div class="inner"></div>
+    </div>
+    <div class="box1 clearfix">     <!-- 去除外边框重叠问题 -->
+        <div class="box2"></div>
+    </div>
+    
+    
+</body>
+</html>

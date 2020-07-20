@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 父子元素 */
+        div > span{
+            color: rgb(7, 122, 45);
+        }
+        div > p > span{
+            color: red;
+        }
+
+        /* 兄弟元素 */
+        p + span{
+            width: 1;/* 紧挨着p元素的下一个span兄弟元素，中间如果有其他元素则无效 */
+            color: yellow;
+        }
+        p ~ span{
+            width: 1;/* p元素后面的所有span兄弟元素 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            div中的p元素<br>
+            <span>div中的p元素中的span元素</span>
+        </p>
+        <span>div中的span元素</span>
+        <span>div中的span元素</span>
+        <span>div中的span元素</span>
+    </div>
+</body>
+</html>

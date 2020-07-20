@@ -1,0 +1,16 @@
+{
+  "id": "1820049",
+  "name": "one",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1350503",
+      "name": "sq-password",
+      "font_class": "icons-",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    }
+  ]
+}

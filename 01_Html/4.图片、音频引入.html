@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img</title>
+</head>
+<body>
+    <!-- 
+        图片引入
+        src 图片绝对路径，也可以是网页路径;
+
+        alt 用来描述图片，搜索引擎可以根据这个来搜索到改图片;
+
+        width  用来设置图片的宽度
+        height 用来设置图片高度
+            -宽度或者高度修改一个，另一个会等比例修改。
+
+        base64 是将.jpg/.gif/.pen格式的图片进行编码，使用编码后的图片会和网页同步加载。
+    -->
+    <img src="../source/1.png" alt="DNF"><!-- 搜索引擎可以根据alt来检索 -->
+
+    <!-- 
+        音频引入
+        audio 标签用于想页面引入音频
+            默认情况下不允许客户控制
+        属性
+            controls 是允许用户播放
+            autoplay 音频文件是否自动播放
+            loop 音乐是否循环播放
+     -->
+     <audio src="../source/微笑_海龟先生.mp3" controls autoplay></audio><br>
+     <audio controls>
+         对不起，该浏览器不支持aoudio！<!-- 如过网页不支持会显示，支持会忽略 -->
+         <source src="../source/微笑_海龟先生.mp3"><br>
+     </audio> 
+     <embed src="../source/微笑_海龟先生.mp3" type="audio/mp3" width="300"><br><!-- 几乎所有浏览器都支持，但是自动播放 -->
+
+    <!-- 
+        video 引入视频文件
+     -->
+    <video src="" controls></video>
+    <!-- 通过iframe将视频引入网页 -->
+    <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=q0033r9cebl" allowFullScreen="true" width="500" height="500"></iframe>
+</body>
+</html>

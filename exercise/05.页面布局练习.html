@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0;
+            padding: 0;
+        }
+        body{
+            width: 1500px;
+            margin: 0px auto;
+        }
+        header{
+            width: 1500px;
+            height: 40px;
+            margin: 0px auto;
+            margin-top: 0px;
+            background-color: rgb(53, 184, 189);
+            position: fixed;
+        }
+        .left{
+            width: 200px;
+            height: 600px;
+            margin: 50px auto;
+            background-color: rgb(68, 105, 59);
+            float: left;
+        }
+        .one{
+            width: 800px;
+            height: 600px;
+            margin: 50px 0 0 10px ;
+            float: left;
+            background-image: url(../../Source/zuomian.jpg);
+            background-size: 800px;
+            background-repeat: no-repeat;
+        }
+        .bottom{
+            width: 1500px;
+            height: 1200px;
+            background-color: palegreen;
+            float: left;
+        }
+        .two{
+            width: 300px;
+            height: 600px;
+            background-color: rgb(207, 142, 37);
+            float: left;
+            margin: 50px 00px 0 10px;
+        }
+        .inner{
+            width: 200px;
+            height: 180px;
+            background-color: rgb(224, 22, 90);
+            float: left;
+            margin: 10px;
+        }
+        img{
+            width: 300px;
+            
+        }
+        ul{
+            list-style: none;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        .two ul .img2{
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+        .three{
+            width: 170px;
+            height: 600px;
+            background-color: pink;
+            float: left;
+            margin: 50px 0 0 10px;
+        }
+        .nav{
+            
+            line-height: 20px;
+            
+        }
+        .nav li{
+            display: inline;
+            line-height: 40px;
+            
+            /* margin: 40px 0; */
+        }
+        .nav li a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 0px 68px;
+            
+            color: rgb(14, 12, 12);
+        }
+        .nav li a:hover{
+            background-color: rgb(116, 110, 116);
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="nav">
+            <li><a href="javascript:;">HTML/CSS</a></li>
+            <li><a href="javascript:;">Browser Side</a></li>
+            <li><a href="javascript:;">Server Side</a></li>
+            <li><a href="javascript:;">Programming</a></li>
+            <li><a href="javascript:;">XML</a></li>
+            <li><a href="javascript:;">Web Building</a></li>
+            <li><a href="javascript:;">Reference</a></li>
+        </ul>
+    </header>
+    <div class="left"></div>
+    <div class="one"></div>
+    <div class="two">
+        <ul>
+            <li><a href="javascript:;"><img src="/Source/zuomian.jpg"></a></li>
+            <li><a href="javascript:;"><img class="img2" src="/Source/zuomian.jpg"></a></li>
+            <li><a href="javascript:;"><img src="/Source/zuomian.jpg"></a></li>
+        </ul>
+    </div>
+    <div class="three"></div>
+    <div class="bottom">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

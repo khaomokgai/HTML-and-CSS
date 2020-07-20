@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            background-color: darkmagenta !important;
+        }
+        div{
+            background-color: darkorange ;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        样式的冲突
+            - 当我们通过不同的选择器，选择相同的元素，并且为相同的样式设置不同的值时，发生了冲突
+            发生样式冲突时，应用哪个样式由选择器的权重(优先级)决定
+
+            选择器的权重
+                内联样式        1，0，0，0     <styel color="red">   
+                id选择器        0，1，0，0     #one{color="red"}
+                类和伪类选择器   0，0，1，0     .one{color="red"}
+                元素选择器      0，0，0，1     p{color="red"}
+                通配选择器      0，0，0，0     *{color="red"}
+                继承的样式      没有优先级      
+            可以在某一个样式后添加！important,则此样式会获取最高权限
+     -->
+     <div>
+         <p class="one">hahahahaaha</p>
+     </div>
+</body>
+</html>

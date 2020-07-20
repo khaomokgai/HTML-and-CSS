@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li::before{
+            /* 
+                Font Awesome 国外网址
+                通过伪元素来设置图表字体
+                    1、找到要设置图标的元素
+                    2、在content中设置字体的编码
+                    3、设置字体的样式
+                        fab
+                        font-family:'Font Awesome 5 Brands';
+
+                        fas
+                        font-family:'Font Awesome 5 Free';
+                        font-weight: 900;
+            */
+            content: '\f1b0';/* 所要图标的编码 */
+            font-family:'Font Awesome 5 Brands';/* 引入文字格式 */
+        }                
+    </style>
+</head>
+<body>
+    <ul>
+        <li>zhangsanaa</li>
+        <!-- 
+            通过实体来使用图标字体：
+            &#x+图标的编码
+         -->
+         <span class="fas">&#xfof3;</span>
+    </ul>
+</body>
+</html>

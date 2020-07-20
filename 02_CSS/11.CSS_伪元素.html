@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            伪元素，表示页面中一套特殊的并不存在的元素
+
+            ::first-letter 第一个字
+            ::selection 鼠标选择的内容
+            ::first-line 第一行的内容
+            ::after 元素的开始
+            ::before 元素的最后
+                -before 和 after 必须要结合contend属性来用
+        */
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color: darkgreen;
+        }
+        p::selection{
+            background-color: darkmagenta;
+        }
+        div::after{
+            content: 'aaa';
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <div>哈哈哈哈哈哈哈哈</div>
+    <p>吉林发布 5月11日消息，舒兰市疫情防控工作新闻发布会今日举行，吉林省疫情防控工作领导小组执行副组长、省政府副秘书长高材林介绍舒兰市疫情防控工作情况。出席发布会的还有吉林省卫生健康委二级巡视员范明，吉林省疾病预防控制中心传染病控制所所长赵庆龙，吉林市人民政府副市长盖东平，舒兰市人民政府市长金华，他们将回答记者提问。 </p>
+</body>
+</html>

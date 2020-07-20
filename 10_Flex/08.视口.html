@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width:6.4vw;
+            height:4.667vw;
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        不同的移动设备完美视口是不一样的
+        所以在移动端开发时，就不能再使用px来进行布局
+
+        vw 表示的是视口的宽度(viewport with)
+            - 100vw = 一个视口的宽度
+            - 1vw = 1%视口宽度
+
+            vw 这个单位永远相对与视口宽度来计算
+
+            设计图的宽度一般为 750px 、1125px
+
+            假设有一个750px的设计图
+            需要创建一个 48px x 35px 大小的元素
+               100vw = 750px    0.33333333vw = 1px
+               6.4vw = 48px
+               4.667vw = 35px
+            width = 6.4vw
+            height = 4.667vw
+               
+     -->
+     <div class="box1"></div>
+</body>
+</html>
